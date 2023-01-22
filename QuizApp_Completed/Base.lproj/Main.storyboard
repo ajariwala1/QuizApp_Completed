@@ -1,24 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuizApp_Completed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_background" translatesAutoresizingMaskIntoConstraints="NO" id="uMx-9u-owb">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nsi-YG-7L9">
+                                <rect key="frame" x="30" y="30" width="333" height="758"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="soa-GF-2pk">
+                                        <rect key="frame" x="30" y="0.0" width="273" height="273.33333333333331"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_logo" translatesAutoresizingMaskIntoConstraints="NO" id="fYN-zi-hw9" userLabel="app_logo">
+                                                <rect key="frame" x="0.0" y="0.0" width="136.66666666666666" height="273.33333333333331"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZP-9X-jOa">
+                                                <rect key="frame" x="136.66666666666663" y="0.0" width="136.33333333333337" height="273.33333333333331"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbon Glacier in this national park has the greatest thickness and volume of any glacier in the continental US." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c65-On-8er">
+                                        <rect key="frame" x="16.333333333333343" y="283.33333333333337" width="300.66666666666663" height="273.33333333333337"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="PQ2-og-tF3">
+                                        <rect key="frame" x="30" y="566.66666666666663" width="273" height="191.33333333333337"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Xe-Ws-1Ot">
+                                                <rect key="frame" x="0.0" y="0.0" width="273" height="88.333333333333329"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                    <backgroundConfiguration key="background" strokeWidth="3">
+                                                        <color key="strokeColor" systemColor="labelColor"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="answerSubmitted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kR8-uT-WO0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9H4-1W-kfl">
+                                                <rect key="frame" x="0.0" y="103.33333333333337" width="273" height="88"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                    <backgroundConfiguration key="background" strokeWidth="3">
+                                                        <color key="strokeColor" systemColor="labelColor"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="answerSubmitted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oxo-nN-dhG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="soa-GF-2pk" firstAttribute="leading" secondItem="nsi-YG-7L9" secondAttribute="leading" constant="30" id="4zs-0c-mBl"/>
+                                    <constraint firstAttribute="trailing" secondItem="PQ2-og-tF3" secondAttribute="trailing" constant="30" id="Mcu-Pi-fne"/>
+                                    <constraint firstAttribute="trailing" secondItem="soa-GF-2pk" secondAttribute="trailing" constant="30" id="POa-dw-MyT"/>
+                                    <constraint firstItem="PQ2-og-tF3" firstAttribute="height" secondItem="soa-GF-2pk" secondAttribute="height" multiplier="0.7" id="YsJ-Kr-Pl7"/>
+                                    <constraint firstItem="PQ2-og-tF3" firstAttribute="leading" secondItem="nsi-YG-7L9" secondAttribute="leading" constant="30" id="hXL-3g-7GO"/>
+                                    <constraint firstItem="c65-On-8er" firstAttribute="height" secondItem="soa-GF-2pk" secondAttribute="height" id="q1E-fs-3n7"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nsi-YG-7L9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="42j-Mh-mlt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nsi-YG-7L9" secondAttribute="bottom" constant="30" id="4vM-mr-weP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nsi-YG-7L9" secondAttribute="trailing" constant="30" id="BAd-2q-akf"/>
+                            <constraint firstItem="uMx-9u-owb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="U7a-pG-30v"/>
+                            <constraint firstItem="uMx-9u-owb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ymk-PZ-d3v"/>
+                            <constraint firstItem="uMx-9u-owb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="fTb-34-I7W"/>
+                            <constraint firstItem="nsi-YG-7L9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="rQ1-e0-ylc"/>
+                            <constraint firstAttribute="bottom" secondItem="uMx-9u-owb" secondAttribute="bottom" id="wcn-Hg-4gh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="background" destination="uMx-9u-owb" id="1LL-ch-9Pj"/>
+                        <outlet property="buttonOne" destination="4Xe-Ws-1Ot" id="5NH-uB-fJu"/>
+                        <outlet property="buttonTwo" destination="9H4-1W-kfl" id="ZRc-h2-mZc"/>
+                        <outlet property="questionLabel" destination="c65-On-8er" id="3U1-g4-Hiw"/>
+                        <outlet property="scoreLabel" destination="QZP-9X-jOa" id="5Nr-a5-Wwb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="112.21374045801527" y="-2.1126760563380285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="app_background" width="133.33332824707031" height="188.66667175292969"/>
+        <image name="app_logo" width="2175" height="2211"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

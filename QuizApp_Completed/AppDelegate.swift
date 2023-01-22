@@ -2,8 +2,6 @@
 //  AppDelegate.swift
 //  QuizApp_Completed
 //
-//  Created by Abhishek Jariwala on 1/22/23.
-//
 
 import UIKit
 
